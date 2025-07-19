@@ -1,0 +1,552 @@
+2025-07-18 15:51:37 INFO  Utils:112 -
+			[TestNG] Running:
+  C:\Users\2406731\git\repository\HackathonProject\master.xml
+
+2025-07-18 15:51:37 INFO  WebDriverManager:1220 -
+			Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-18 15:51:37 INFO  WebDriverManager:1282 -
+			Exporting webdriver.chrome.driver as C:\Users\2406731\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-18 15:51:39 INFO  TS_Login:73 -
+			Chrome browser initialized with notifications allowed.
+2025-07-18 15:51:41 INFO  TS_Login:14 -
+			opening the login popup window
+2025-07-18 15:51:41 INFO  TS_Login:20 -
+			started the login test with invalid google account
+2025-07-18 15:52:04 INFO  TS_Login:57 -
+			switching back to main window
+2025-07-18 15:52:04 INFO  TS_Login:14 -
+			opening the login popup window
+2025-07-18 15:52:04 INFO  TS_Login:34 -
+			started the login test with valid google account and invalid password
+2025-07-18 15:52:30 INFO  TS_Login:46 -
+			password textfeild is blocked
+2025-07-18 15:52:30 INFO  TS_Login:50 -
+			taking the screenshot of valid google account
+2025-07-18 15:52:30 INFO  TS_Login:52 -
+			C:\Users\2406731\git\repository\HackathonProject\screenshots\LoginWithvalidEmail_20250718035230.png
+2025-07-18 15:52:30 INFO  TS_Login:57 -
+			switching back to main window
+2025-07-18 15:59:02 INFO  Utils:112 -
+			[TestNG] Running:
+  C:\Users\2406731\git\repository\HackathonProject\master.xml
+
+2025-07-18 15:59:02 INFO  WebDriverManager:1220 -
+			Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-18 15:59:02 INFO  WebDriverManager:1282 -
+			Exporting webdriver.chrome.driver as C:\Users\2406731\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-18 15:59:04 INFO  TS_UsedCar:73 -
+			Chrome browser initialized with notifications allowed.
+2025-07-18 15:59:06 INFO  TS_UsedCar:24 -
+			Attempting to hover over 'More' menu.
+2025-07-18 15:59:07 INFO  TS_UsedCar:26 -
+			'More' menu hovered successfully.
+2025-07-18 15:59:07 INFO  TS_UsedCar:27 -
+			Attempting to click 'Used Cars' link.
+2025-07-18 15:59:38 INFO  TS_UsedCar:29 -
+			'Used Cars' link clicked successfully. Navigated to Used Car page.
+2025-07-18 15:59:38 INFO  TS_UsedCar:39 -
+			Starting Test_PopularCarModels_Chennai test...
+2025-07-18 15:59:38 INFO  TS_UsedCar:42 -
+			Attempting to select city: Chennai
+2025-07-18 15:59:39 INFO  TS_UsedCar:44 -
+			City 'Chennai' selected.
+2025-07-18 15:59:39 INFO  TS_UsedCar:46 -
+			Attempting to enter city (confirm selection).
+2025-07-18 15:59:59 ERROR TS_UsedCar:68 -
+			TEST FAILED - An unexpected error occurred: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id="ui-id-5"]/li[1]' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id="ui-id-5"]/li[1]' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObjects.UsedCarPage.enterCity(UsedCarPage.java:50)
+	at testCases.TS_UsedCar.Test_PopularCarModels_Chennai(TS_UsedCar.java:47)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="ui-id-5"]/li[1]"}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6a4573d5c219954902dfdaabb2dd64d, findElement {value=//*[@id="ui-id-5"]/li[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2406731\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51455}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51455/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b6a4573d5c219954902dfdaabb2dd64d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy34.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 more
+2025-07-18 15:59:59 INFO  TS_UsedCar:125 -
+			--- Starting @AfterMethod: Navigating back to Home Page ---
+2025-07-18 16:00:00 INFO  TS_UsedCar:130 -
+			Navigated back to Home Page: https://www.zigwheels.com/
+2025-07-18 16:00:00 INFO  TS_UsedCar:140 -
+			--- Finished @AfterMethod ---
+2025-07-18 16:00:00 INFO  TS_UsedCar:24 -
+			Attempting to hover over 'More' menu.
+2025-07-18 16:00:00 INFO  TS_UsedCar:26 -
+			'More' menu hovered successfully.
+2025-07-18 16:00:00 INFO  TS_UsedCar:27 -
+			Attempting to click 'Used Cars' link.
+2025-07-18 16:00:11 INFO  TS_UsedCar:29 -
+			'Used Cars' link clicked successfully. Navigated to Used Car page.
+2025-07-18 16:00:11 INFO  TS_UsedCar:75 -
+			Starting Test_VerifyUsedCarPageTitleAndURL test...
+2025-07-18 16:00:11 ERROR TS_UsedCar:93 -
+			TEST FAILED - An unexpected error occurred during title/URL verification: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.69)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6a4573d5c219954902dfdaabb2dd64d, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2406731\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51455}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51455/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b6a4573d5c219954902dfdaabb2dd64d
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.69)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6a4573d5c219954902dfdaabb2dd64d, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2406731\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51455}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51455/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b6a4573d5c219954902dfdaabb2dd64d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:317)
+	at testCases.TS_UsedCar.Test_VerifyUsedCarPageTitleAndURL(TS_UsedCar.java:79)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2025-07-18 16:00:11 INFO  TS_UsedCar:125 -
+			--- Starting @AfterMethod: Navigating back to Home Page ---
+2025-07-18 16:00:11 ERROR TS_UsedCar:138 -
+			Error navigating back to Home Page in @AfterMethod: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.69)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6a4573d5c219954902dfdaabb2dd64d, get {url=https://www.zigwheels.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2406731\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51455}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51455/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b6a4573d5c219954902dfdaabb2dd64d
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.69)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6a4573d5c219954902dfdaabb2dd64d, get {url=https://www.zigwheels.com/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2406731\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51455}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51455/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b6a4573d5c219954902dfdaabb2dd64d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:312)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:1071)
+	at testCases.TS_UsedCar.navigateToHomePage(TS_UsedCar.java:129)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:779)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:755)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+2025-07-18 16:00:11 INFO  TS_UsedCar:140 -
+			--- Finished @AfterMethod ---
+2025-07-18 16:00:11 INFO  TS_UsedCar:24 -
+			Attempting to hover over 'More' menu.
+2025-07-18 16:02:37 INFO  Utils:112 -
+			[TestNG] Running:
+  C:\Users\2406731\git\repository\HackathonProject\master.xml
+
+2025-07-18 16:02:38 INFO  WebDriverManager:1220 -
+			Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-18 16:02:38 INFO  WebDriverManager:1282 -
+			Exporting webdriver.chrome.driver as C:\Users\2406731\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-18 16:02:39 INFO  TS_UsedCar:73 -
+			Chrome browser initialized with notifications allowed.
+2025-07-18 16:02:49 INFO  TS_UsedCar:24 -
+			Attempting to hover over 'More' menu.
+2025-07-18 16:02:49 INFO  TS_UsedCar:26 -
+			'More' menu hovered successfully.
+2025-07-18 16:02:49 INFO  TS_UsedCar:27 -
+			Attempting to click 'Used Cars' link.
+2025-07-18 16:02:52 INFO  TS_UsedCar:29 -
+			'Used Cars' link clicked successfully. Navigated to Used Car page.
+2025-07-18 16:02:52 INFO  TS_UsedCar:39 -
+			Starting Test_PopularCarModels_Chennai test...
+2025-07-18 16:02:52 INFO  TS_UsedCar:42 -
+			Attempting to select city: Chennai
+2025-07-18 16:02:52 INFO  TS_UsedCar:44 -
+			City 'Chennai' selected.
+2025-07-18 16:02:52 INFO  TS_UsedCar:46 -
+			Attempting to enter city (confirm selection).
+2025-07-18 16:02:52 INFO  TS_UsedCar:48 -
+			City entered/confirmed.
+2025-07-18 16:02:52 INFO  TS_UsedCar:49 -
+			Retrieving list of popular car models.
+2025-07-18 16:02:52 INFO  TS_UsedCar:51 -
+			Popular car models retrieved successfully. Count: 8
+2025-07-18 16:02:52 INFO  TS_UsedCar:55 -
+			Assertion passed: Popular car models list for Chennai is not empty.
+2025-07-18 16:02:52 INFO  TS_UsedCar:57 -
+			Attempting to take screenshot of popular car models section.
+2025-07-18 16:03:04 INFO  TS_UsedCar:61 -
+			Screenshot taken and saved at: C:\Users\2406731\git\repository\HackathonProject\screenshots\PopularUsedCarModels_Chennai_20250718040254.png
+2025-07-18 16:03:04 INFO  TS_UsedCar:66 -
+			Test_PopularCarModels_Chennai completed successfully.
+2025-07-18 16:03:04 INFO  TS_UsedCar:125 -
+			--- Starting @AfterMethod: Navigating back to Home Page ---
+2025-07-18 16:03:05 INFO  TS_UsedCar:130 -
+			Navigated back to Home Page: https://www.zigwheels.com/
+2025-07-18 16:03:05 INFO  TS_UsedCar:140 -
+			--- Finished @AfterMethod ---
+2025-07-18 16:03:05 INFO  TS_UsedCar:24 -
+			Attempting to hover over 'More' menu.
+2025-07-18 16:03:05 INFO  TS_UsedCar:26 -
+			'More' menu hovered successfully.
+2025-07-18 16:03:05 INFO  TS_UsedCar:27 -
+			Attempting to click 'Used Cars' link.
+2025-07-18 16:03:07 INFO  TS_UsedCar:29 -
+			'Used Cars' link clicked successfully. Navigated to Used Car page.
+2025-07-18 16:03:07 INFO  TS_UsedCar:75 -
+			Starting Test_VerifyUsedCarPageTitleAndURL test...
+2025-07-18 16:03:07 INFO  TS_UsedCar:80 -
+			Expected Page Title: 'Used Cars for Sale, Buy Second Hand Cars in India @ Zigwheels', Actual Page Title: 'Used Cars for Sale, Buy Second Hand Cars in India @ Zigwheels'
+2025-07-18 16:03:07 INFO  TS_UsedCar:85 -
+			Expected URL to contain: '/used-car', Actual URL: 'https://www.zigwheels.com/used-car'
+2025-07-18 16:03:07 INFO  TS_UsedCar:88 -
+			Test_VerifyUsedCarPageTitleAndURL completed successfully.
+2025-07-18 16:03:07 INFO  TS_UsedCar:125 -
+			--- Starting @AfterMethod: Navigating back to Home Page ---
+2025-07-18 16:03:08 INFO  TS_UsedCar:130 -
+			Navigated back to Home Page: https://www.zigwheels.com/
+2025-07-18 16:03:08 INFO  TS_UsedCar:140 -
+			--- Finished @AfterMethod ---
+2025-07-18 16:03:08 INFO  TS_UsedCar:24 -
+			Attempting to hover over 'More' menu.
+2025-07-18 16:03:08 INFO  TS_UsedCar:26 -
+			'More' menu hovered successfully.
+2025-07-18 16:03:08 INFO  TS_UsedCar:27 -
+			Attempting to click 'Used Cars' link.
+2025-07-18 16:03:09 INFO  TS_UsedCar:29 -
+			'Used Cars' link clicked successfully. Navigated to Used Car page.
+2025-07-18 16:03:09 INFO  TS_UsedCar:100 -
+			Starting Test_InvalidCitySelection test...
+2025-07-18 16:03:09 INFO  TS_UsedCar:103 -
+			Attempting to select an invalid city: NonExistentCity123
+2025-07-18 16:03:19 INFO  TS_UsedCar:112 -
+			Expected error for invalid city selection (e.g., element not found/interactable): element not interactable
+  (Session info: chrome=137.0.7151.69)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [52853cbd26e0ed9d30ec7c3c69e6b0c4, sendKeysToElement {id=f.E16DDE8C7592DBEC31AD491BFBF15EFE.d.FF836CFFBCBD2F98B33E8525DF645E40.e.591, value=[Ljava.lang.CharSequence;@41b64020}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2406731\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51977}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51977/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (52853cbd26e0ed9d30ec7c3c69e6b0c4)] -> xpath: //*[@id="gs_input5"]]
+Session ID: 52853cbd26e0ed9d30ec7c3c69e6b0c4
+2025-07-18 16:03:19 INFO  TS_UsedCar:125 -
+			--- Starting @AfterMethod: Navigating back to Home Page ---
+2025-07-18 16:03:20 INFO  TS_UsedCar:130 -
+			Navigated back to Home Page: https://www.zigwheels.com/
+2025-07-18 16:03:20 INFO  TS_UsedCar:140 -
+			--- Finished @AfterMethod ---
+2025-07-18 16:13:09 INFO  Utils:112 -
+			[TestNG] Running:
+  C:\Users\2406731\git\repository\HackathonProject\master.xml
+
+2025-07-18 16:13:09 INFO  WebDriverManager:1220 -
+			Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-18 16:13:09 INFO  WebDriverManager:1282 -
+			Exporting webdriver.chrome.driver as C:\Users\2406731\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-18 16:13:09 INFO  TS_Login:124 -
+			Chrome browser initialized with notifications allowed.
+2025-07-18 16:13:17 INFO  TS_Login:14 -
+			opening the login popup window
+2025-07-18 16:13:17 INFO  TS_Login:20 -
+			started the login test with invalid google account
+2025-07-18 16:13:22 INFO  TS_Login:27 -
+			taking the screenshot of invalid google account
+2025-07-18 16:13:22 INFO  TS_Login:29 -
+			C:\Users\2406731\git\repository\HackathonProject\screenshots\LoginWithInvalidEmail_20250718041322.png
+2025-07-18 16:13:22 INFO  TS_Login:57 -
+			switching back to main window
+2025-07-18 16:13:22 INFO  TS_Login:14 -
+			opening the login popup window
+2025-07-18 16:13:22 INFO  TS_Login:34 -
+			started the login test with valid google account and invalid password
+2025-07-18 16:13:48 INFO  TS_Login:46 -
+			password textfeild is blocked
+2025-07-18 16:13:48 INFO  TS_Login:50 -
+			taking the screenshot of valid google account
+2025-07-18 16:13:48 INFO  TS_Login:52 -
+			C:\Users\2406731\git\repository\HackathonProject\screenshots\LoginWithvalidEmail_20250718041348.png
+2025-07-18 16:13:48 INFO  TS_Login:57 -
+			switching back to main window
+2025-07-18 16:13:51 INFO  WebDriverManager:1220 -
+			Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-18 16:13:51 INFO  WebDriverManager:1282 -
+			Exporting webdriver.chrome.driver as C:\Users\2406731\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-18 16:13:51 INFO  TS_UpcomingHondaBike:124 -
+			Chrome browser initialized with notifications allowed.
+2025-07-18 16:13:56 INFO  TS_UpcomingHondaBike:18 -
+			Clicking on Upcoming Bikes
+2025-07-18 16:13:56 INFO  TS_UpcomingHondaBike:20 -
+			Clicking on all upcoming bikes
+2025-07-18 16:13:58 INFO  TS_UpcomingHondaBike:23 -
+			Clicking on Honda in upcoming bikes page
+2025-07-18 16:13:59 INFO  TS_UpcomingHondaBike:30 -
+			Starting to test Honda upcoming bikes under 4 lac
+2025-07-18 16:13:59 INFO  TS_UpcomingHondaBike:36 -
+			Upcomming Honda Bikes under 400000 are
+2025-07-18 16:13:59 INFO  TS_UpcomingHondaBike:38 -
+			[ Honda Activa 7G , Rs. 79,000 , Expected Launch : Oct 2025 ]
+2025-07-18 16:13:59 INFO  TS_UpcomingHondaBike:46 -
+			Navigating back to homepage
+2025-07-18 16:14:02 INFO  WebDriverManager:1220 -
+			Using chromedriver 137.0.7151.119 (resolved driver for Chrome 137)
+2025-07-18 16:14:02 INFO  WebDriverManager:1282 -
+			Exporting webdriver.chrome.driver as C:\Users\2406731\.cache\selenium\chromedriver\win64\137.0.7151.119\chromedriver.exe
+2025-07-18 16:14:02 INFO  TS_UsedCar:124 -
+			Chrome browser initialized with notifications allowed.
+2025-07-18 16:14:51 INFO  TS_UsedCar:24 -
+			Attempting to hover over 'More' menu.
+2025-07-18 16:14:51 INFO  TS_UsedCar:26 -
+			'More' menu hovered successfully.
+2025-07-18 16:14:51 INFO  TS_UsedCar:27 -
+			Attempting to click 'Used Cars' link.
+2025-07-18 16:15:01 INFO  TS_UsedCar:29 -
+			'Used Cars' link clicked successfully. Navigated to Used Car page.
+2025-07-18 16:15:01 INFO  TS_UsedCar:39 -
+			Starting Test_PopularCarModels_Chennai test...
+2025-07-18 16:15:01 INFO  TS_UsedCar:42 -
+			Attempting to select city: Chennai
+2025-07-18 16:15:02 INFO  TS_UsedCar:44 -
+			City 'Chennai' selected.
+2025-07-18 16:15:02 INFO  TS_UsedCar:46 -
+			Attempting to enter city (confirm selection).
+2025-07-18 16:15:22 ERROR TS_UsedCar:68 -
+			TEST FAILED - An unexpected error occurred: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id="ui-id-5"]/li/a' (tried for 10 second(s) with 500 milliseconds interval)
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@id="ui-id-5"]/li/a' (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pageObjects.UsedCarPage.enterCity(UsedCarPage.java:50)
+	at testCases.TS_UsedCar.Test_PopularCarModels_Chennai(TS_UsedCar.java:47)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="ui-id-5"]/li/a"}
+  (Session info: chrome=137.0.7151.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [80e924374feb0be8658aad6cf48d0be6, findElement {using=xpath, value=//*[@id="ui-id-5"]/li/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2406731\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53468}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.230.28.65:4444/sess..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 80e924374feb0be8658aad6cf48d0be6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy34.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 28 more
+2025-07-18 16:15:22 INFO  TS_UsedCar:125 -
+			--- Starting @AfterMethod: Navigating back to Home Page ---
+2025-07-18 16:15:23 INFO  TS_UsedCar:130 -
+			Navigated back to Home Page: https://www.zigwheels.com/
+2025-07-18 16:15:23 INFO  TS_UsedCar:140 -
+			--- Finished @AfterMethod ---
+2025-07-18 16:15:23 INFO  TS_UsedCar:24 -
+			Attempting to hover over 'More' menu.
+2025-07-18 16:15:23 INFO  TS_UsedCar:26 -
+			'More' menu hovered successfully.
+2025-07-18 16:15:23 INFO  TS_UsedCar:27 -
+			Attempting to click 'Used Cars' link.
+2025-07-18 16:15:25 INFO  TS_UsedCar:29 -
+			'Used Cars' link clicked successfully. Navigated to Used Car page.
+2025-07-18 16:15:25 INFO  TS_UsedCar:75 -
+			Starting Test_VerifyUsedCarPageTitleAndURL test...
+2025-07-18 16:15:25 INFO  TS_UsedCar:80 -
+			Expected Page Title: 'Used Cars for Sale, Buy Second Hand Cars in India @ Zigwheels', Actual Page Title: 'Used Cars for Sale, Buy Second Hand Cars in India @ Zigwheels'
+2025-07-18 16:15:25 INFO  TS_UsedCar:85 -
+			Expected URL to contain: '/used-car', Actual URL: 'https://www.zigwheels.com/used-car'
+2025-07-18 16:15:25 INFO  TS_UsedCar:88 -
+			Test_VerifyUsedCarPageTitleAndURL completed successfully.
+2025-07-18 16:15:25 INFO  TS_UsedCar:125 -
+			--- Starting @AfterMethod: Navigating back to Home Page ---
+2025-07-18 16:15:25 INFO  TS_UsedCar:130 -
+			Navigated back to Home Page: https://www.zigwheels.com/
+2025-07-18 16:15:25 INFO  TS_UsedCar:140 -
+			--- Finished @AfterMethod ---
+2025-07-18 16:15:25 INFO  TS_UsedCar:24 -
+			Attempting to hover over 'More' menu.
+2025-07-18 16:15:26 INFO  TS_UsedCar:26 -
+			'More' menu hovered successfully.
+2025-07-18 16:15:26 INFO  TS_UsedCar:27 -
+			Attempting to click 'Used Cars' link.
+2025-07-18 16:15:28 INFO  TS_UsedCar:29 -
+			'Used Cars' link clicked successfully. Navigated to Used Car page.
+2025-07-18 16:15:28 INFO  TS_UsedCar:100 -
+			Starting Test_InvalidCitySelection test...
+2025-07-18 16:15:28 INFO  TS_UsedCar:103 -
+			Attempting to select an invalid city: NonExistentCity123
+2025-07-18 16:15:38 INFO  TS_UsedCar:112 -
+			Expected error for invalid city selection (e.g., element not found/interactable): Expected condition failed: waiting for visibility of element located by By.xpath: //ul[starts-with(@id, 'ui-id')]/li/a (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\2406731\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53468}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://10.230.28.65:4444/sess..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 80e924374feb0be8658aad6cf48d0be6
+2025-07-18 16:15:38 INFO  TS_UsedCar:125 -
+			--- Starting @AfterMethod: Navigating back to Home Page ---
+2025-07-18 16:16:22 INFO  TS_UsedCar:130 -
+			Navigated back to Home Page: https://www.zigwheels.com/
+2025-07-18 16:16:22 INFO  TS_UsedCar:140 -
+			--- Finished @AfterMethod ---
